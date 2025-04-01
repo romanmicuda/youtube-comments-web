@@ -55,7 +55,7 @@ python server/app.py
 
 ```bash
 # Install dependencies
-cd frontend
+cd app
 yarn install
 
 # Start development server
