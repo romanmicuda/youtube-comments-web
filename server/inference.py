@@ -69,11 +69,10 @@ def predict_sentiment(comment, model, vectorizer, label_encoder, device='cpu'):
             label_encoder.inverse_transform([i])[0]: float(prob)
             for i, prob in enumerate(probabilities)
         }
+
+        result = max(class_probabilities, key=class_probabilities.get)
         
-        return {
-            'sentiment': sentiment,
-            'probabilities': class_probabilities
-        }
+        return result
 
 # Example usage
 if __name__ == "__main__":

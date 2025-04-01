@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from inference import load_model_and_components, predict_sentiment
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Load model and components
 model, vectorizer, label_encoder, device = load_model_and_components()
