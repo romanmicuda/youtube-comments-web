@@ -6,7 +6,16 @@ A web application that analyzes the sentiment of YouTube comments using machine 
 
 This application uses a PyTorch neural network model to classify YouTube comments into different sentiment categories. 
 
-## Installation
+## Project Demonstration
+
+Below is a demonstration of the YouTube Comments Sentiment Analyzer in action:
+
+![YouTube Comments Sentiment Analysis in action](assets/output.gif)
+
+The application provides real-time sentiment analysis of comments from YouTube videos, helping content creators understand audience reactions and engagement.
+
+
+## Installationå
 
 ### Prerequisites
 
